@@ -148,14 +148,31 @@ nav {
     }
 
     @media screen and (min-width: 768px) {
+        height: 120px;
+        display: grid;
+        grid-template-areas: 'c links';
+        grid-template-columns: 25% 75%;
+
         #mobile-menubtn {
             visibility: hidden;
         }
         .topnav{
             visibility: visible;
+            grid-area: links;
+
+            padding-top: 50px;
+            text-align: center;
+            //padding-right: 96px;
+            a {
+                padding: 0 24px 0 24px;
+            }
+            a:link {
+                text-decoration: none;
+            }
         }
-        position: sticky;
-        height: 72px;
+    }
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 50% 50%;
     }
 }
 
