@@ -16,9 +16,13 @@ nav {
     top: 0;
     height: 64px;
 
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.7);
+
     #mobile-menubtn {
-        #nav-icon3 {
+            #nav-icon3 {
             z-index: 10;
+            opacity: 100%;
             position: fixed;
             top: 18px;
             right: 16px;
@@ -111,10 +115,10 @@ nav {
         background-color: #9fd4d6;
         overflow-x: hidden;
         transition: 0.3s;
-        padding-top: 60px;
+        padding-top: 80px;
 
         a {
-            padding: 8px 8px 8px 32px;
+            padding: 16px 16px 16px 48px;
             text-decoration: none;
             font-size: 25px;
             color: #083c4d;
@@ -126,6 +130,10 @@ nav {
             color: #00969b;
         }
 
+        a:focus {
+            outline: none;
+        }
+
         .closebtn {
             position: absolute;
             top: 0;
@@ -135,9 +143,9 @@ nav {
           }
       }
 
-      .topnav{
-          visibility: hidden;
-      }
+    .topnav{
+        visibility: hidden;
+    }
 
     @media screen and (min-width: 768px) {
         #mobile-menubtn {

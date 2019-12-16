@@ -14,12 +14,15 @@ body {
 nav {
   top: 0;
   height: 64px;
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 nav #mobile-menubtn {
   /* Icon 3 */
 }
 nav #mobile-menubtn #nav-icon3 {
   z-index: 10;
+  opacity: 100%;
   position: fixed;
   top: 18px;
   right: 16px;
@@ -97,10 +100,10 @@ nav .sidenav {
   background-color: #9fd4d6;
   overflow-x: hidden;
   transition: 0.3s;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 nav .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 16px 16px 16px 48px;
   text-decoration: none;
   font-size: 25px;
   color: #083c4d;
@@ -109,6 +112,9 @@ nav .sidenav a {
 }
 nav .sidenav a:hover {
   color: #00969b;
+}
+nav .sidenav a:focus {
+  outline: none;
 }
 nav .sidenav .closebtn {
   position: absolute;
