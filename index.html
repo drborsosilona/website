@@ -8,10 +8,30 @@
 </head>
 <body>
     <nav>
-        <a href="#">home</a>
-        <a href="#">tudnivalók</a>
-        <a href="#">rólam</a>
-        <a href="#">kapcsolat</a>
+
+        <span id="mobile-menubtn" onclick="openNav()" style="z-index: 1;">
+            <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </span>
+
+        <div class="sidenav" id="menusidenav">
+            <a href="#">home</a>
+            <a href="#">tudnivalók</a>
+            <a href="#">rólam</a>
+            <a href="#">kapcsolat</a>
+        </div>
+
+        <div class="topnav">
+            <a href="#">home</a>
+            <a href="#">tudnivalók</a>
+            <a href="#">rólam</a>
+            <a href="#">kapcsolat</a>
+        </div>
+
     </nav>
 
     <div id="intro">
@@ -132,6 +152,26 @@
     <footer>
         © 2019 Borsós Ilona
     </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(document).ready(function(){
+	            $('#nav-icon3').click(function(){
+                $(this).toggleClass('open');
+	        });
+        });
+
+        function openNav() {
+            
+            document.getElementById("menusidenav").style.visibility = "visible";
+            document.getElementById("menusidenav").style.opacity = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("menusidenav").style.opacity = "0%";
+          document.getElementById("menusidenav").style.visibility = "hidden";
+        }
+
+    </script>
 
 </body>
 </html>

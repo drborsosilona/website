@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.otf);
+}
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat-Regular;
 }
 
 body {
@@ -8,12 +12,146 @@ body {
 }
 
 nav {
-  position: sticky;
   top: 0;
+  height: 64px;
+}
+nav #mobile-menubtn {
+  /* Icon 3 */
+}
+nav #mobile-menubtn #nav-icon3 {
+  z-index: 10;
+  position: fixed;
+  top: 18px;
+  right: 16px;
+  font-size: 36px;
+  margin-left: 50px;
+  width: 35px;
+  height: 18px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+nav #mobile-menubtn #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #083c4d;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+nav #mobile-menubtn #nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+nav #mobile-menubtn #nav-icon3 span:nth-child(2), nav #mobile-menubtn #nav-icon3 span:nth-child(3) {
+  top: 12px;
+}
+nav #mobile-menubtn #nav-icon3 span:nth-child(4) {
+  top: 24px;
+}
+nav #mobile-menubtn #nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+nav #mobile-menubtn #nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+nav #mobile-menubtn #nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+nav #mobile-menubtn #nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+nav .sidenav {
+  opacity: 0%;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #9fd4d6;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+nav .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #083c4d;
+  display: block;
+  transition: 0.3s;
+}
+nav .sidenav a:hover {
+  color: #00969b;
+}
+nav .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+nav .topnav {
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    position: sticky;
+    height: 72px;
+  }
+  nav #mobile-menubtn {
+    visibility: hidden;
+  }
+  nav .topnav {
+    visibility: visible;
+  }
 }
 
+#intro {
+  display: grid;
+  grid-template-areas: "img" "article";
+}
 #intro img {
+  grid-area: img;
   width: 100%;
+}
+#intro article {
+  grid-area: article;
+}
+@media screen and (min-width: 768px) {
+  #intro {
+    grid-template-areas: "img article";
+    grid-template-columns: 50% 50%;
+  }
+  #intro img {
+    width: 100%;
+  }
 }
 
 #exams .exam-type img {
