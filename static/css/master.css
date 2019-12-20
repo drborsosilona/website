@@ -183,6 +183,7 @@ nav .topnav {
 }
 #intro article {
   grid-area: article;
+  padding-bottom: 24px;
 }
 #intro article #signature {
   width: 90%;
@@ -221,6 +222,9 @@ nav .topnav {
   }
   #intro article h2 {
     font-size: 4vw;
+  }
+  #intro article p {
+    padding: 32px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -273,8 +277,39 @@ nav .topnav {
 
 #exam-info {
   position: relative;
+  display: grid;
+  grid-template-columns: auto;
   margin: 0;
+  padding: 30px;
   background-color: #9fd4d6;
+}
+#exam-info p {
+  font-size: 14pt;
+}
+@media screen and (min-width: 600px) {
+  #exam-info {
+    padding: 60px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #exam-info {
+    padding: 120px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #exam-info {
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #exam-info {
+    grid-template-columns: 30% 30%;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+  }
 }
 
 #exams .exam-type img {
