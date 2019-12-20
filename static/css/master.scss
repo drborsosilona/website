@@ -1,7 +1,12 @@
 @font-face {
     font-family: Montserrat-Regular;
     src: url(../fonts/Montserrat-Regular.otf);
-  }
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.otf);
+}
 
 * {
     font-family: Montserrat-Regular;
@@ -10,6 +15,7 @@
 body {
     display: grid;
     margin: 0;
+    color: #083c4d;
 }
 
 nav {
@@ -146,13 +152,16 @@ nav {
         visibility: hidden;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) {
+    }
+    @media screen and (min-width: 992px) {
         position: fixed;
         width: 100%;
         height: 120px;
         display: grid;
         grid-template-areas: 'c links';
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 50% 50%;
+
 
         #mobile-menubtn {
             visibility: hidden;
@@ -163,7 +172,6 @@ nav {
 
             padding-top: 50px;
             text-align: center;
-            //padding-right: 96px;
             a {
                 padding: 0 24px 0 24px;
                 color: #083c4d;
@@ -176,9 +184,6 @@ nav {
                 color: #00969b;
             }
         }
-    }
-    @media screen and (min-width: 1024px) {
-        grid-template-columns: 50% 50%;
     }
 }
 
@@ -193,15 +198,54 @@ nav {
     }
     article {
         grid-area: article;
+        img {
+            width: 90%;
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 24px;
+            transform: rotate(-5deg);
+        }
+        h2 {
+            text-align: center;
+            font-family: Montserrat-Light;
+            font-weight: 300;
+            margin: 0;
+            font-size: 16pt;
+            padding-top: 4px;
+        }
+        p {
+            margin: 0;
+            padding: 20px;
+            font-size: 14pt;
+        }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
        grid-template-areas: 'img article';
-       grid-template-columns: 50% 50%;
+       grid-template-columns: 50% auto;
        img {
            width: 100%;
        }
        article {
-
+           img {
+               width: 60%;
+               padding-top: 20vw;
+           }
+           h2 {
+               font-size: 24pt;
+           }
+           p {
+               width: 420px;
+               margin-left: auto;
+               margin-right: auto;
+               //padding: 0 300px 0 200px;
+               font-size: 14pt;
+           }
+           #service {
+               padding-top: 24px;
+               padding-bottom: 52px;
+           }
        }
     }
 }
