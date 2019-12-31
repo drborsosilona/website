@@ -20,14 +20,14 @@
 
         <div class="sidenav" id="menusidenav">
             <a href="#" onclick="toggleNav()">home</a>
-            <a href="#" onclick="toggleNav()">tudnivalók</a>
+            <a href="#tudnivalok" onclick="toggleNav()">tudnivalók</a>
             <a href="#" onclick="toggleNav()">rólam</a>
             <a href="#" onclick="toggleNav()">kapcsolat</a>
         </div>
 
         <div class="topnav">
             <a href="#">home</a>
-            <a href="#">tudnivalók</a>
+            <a href="#tudnivalok">tudnivalók</a>
             <a href="#">rólam</a>
             <a href="#">kapcsolat</a>
         </div>
@@ -47,7 +47,8 @@
     <div id="exam-info">
         <article>
             <h1> Mi az ultrahang?</h1>
-            <p>Az ultrahang az ember számára nem hallható hanghullám, orvosi gyakorlatban a 70-es évek óta használják diagnosztizálásra. Az orvosok ezt a képalkotó vizsgálatot alkalmazzák leggyakrabban, a diagnózis felállításához, a kezelések előtt. A páciens számára nem jár sugárterheléssel, semmilyen fájdalommal. Bármely életkorban alkalmazható és szükség esetén többször is ismételhető.</p>
+            <p>Az ultrahang az ember számára nem hallható hanghullám, orvosi gyakorlatban a 70-es évek óta használják diagnosztizálásra. Az orvosok ezt a képalkotó vizsgálatot alkalmazzák leggyakrabban, a diagnózis felállításához, a kezelések előtt.</p> 
+            <p>    A páciens számára nem jár sugárterheléssel, semmilyen fájdalommal. Bármely életkorban alkalmazható és szükség esetén többször is ismételhető.</p>
         </article>
         <article>
             <h1>
@@ -67,9 +68,9 @@
             Vizsgálatok
         </h1>
         <div class="exam-type">
-            <img src="static/img/hasi.jpg" alt="">
-            <h2>Has és kismedence</h2>
-            <article>
+            <img src="static/img/hasi.jpg" alt="" id="exampic">
+            <h2 id="examtitle">Has és kismedence</h2>
+            <div id="examwhat">
                 <p>Mit vizsgál:</p>
                 <ul>
                     <li>máj,</li>
@@ -83,20 +84,46 @@
                     <li>nőknél a méh, petefészkek,</li>
                     <li> férfiaknál a prosztata</li>
                 </ul>
-            </article>
-            <article>
+            </div>
+            <div id="examwhy">
                 <p>Mit lehet megállapítani:</p>
-                <li>szerkezeti eltérései,</li>
-                <li>fejlődési rendellenességei, a </li>
-                <li>ciszták, </li>
-                <li>kövek </li>
-                <li>tályogok, </li>
-                <li>jóindulatú és rosszindulatú daganatok </li>
-                <li>gyomor-bélrenszer vizsgálatára korlátozottan alkalmazható </li>
-            </article>
+                <ul>
+                    <li>szerkezeti eltérései,</li>
+                    <li>fejlődési rendellenességei, a </li>
+                    <li>ciszták, </li>
+                    <li>kövek </li>
+                    <li>tályogok, </li>
+                    <li>jóindulatú és rosszindulatú daganatok </li>
+                    <li>gyomor-bélrenszer vizsgálatára korlátozottan alkalmazható </li>    
+                </ul>
+            </div>
+        </div>
+        <div class="exam-type">
+            <img src="static/img/nyaki.jpg" alt="" id="exampic">
+            <h2 id="examtitle">Nyaki lágyrészek</h2>
+            <div id="examwhat">
+                <p>Mit vizsgál:</p>
+                <ul>
+                    <li>pajzsmirigy,</li>
+                    <li>mellékpajzsmirígy,</li>
+                    <li>nyálmirigyek,</li>
+                    <li>nyirokcsomók,</li>
+                    <li>izmok</li>
+                </ul>
+            </div>
+            <div id="examwhy">
+                <p>Mit lehet megállapítani:</p>
+                <ul>
+                    <li>göbök</li>
+                    <li>gyulladásos folyamatok,</li>
+                    <li>méretváltozás</li>
+                    <li>ciszták</li>
+                    <li>jó és rosszindulatú daganatokat</li>
+                </ul>
+            </div>
         </div>
 
-        <div id="exam-details">
+        <div class="exam-details" id="tudnivalok">
             <article>
                 <h2>A vizsgálatok feltételei</h2>
                 <p>A vizsgálatokhoz beutaló nem szükséges.</p>

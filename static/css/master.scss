@@ -10,6 +10,10 @@
 
 * {
     font-family: Montserrat-Regular;
+    scroll-behavior: auto;
+    @media screen and (min-width: 800px){
+        scroll-behavior: smooth;
+    }
 }
 
 body {
@@ -17,7 +21,6 @@ body {
     margin: 0;
     color: #083c4d;
     background-color: #f5f5f5;
-
 }
 
 nav {
@@ -315,20 +318,22 @@ nav {
     margin: 0;
     padding: 30px;
     background-color: #9fd4d6;
-    p {
+    p ul {
         font-size: 14pt;
     }
     @media screen and (min-width: 600px) {
         padding: 60px;
     }
     @media screen and (min-width: 800px) {
-        padding: 120px;
+
     }
     @media screen and (min-width: 992px) {
-        grid-template-columns: 45% 45%;
+        //grid-template-columns: 45% 45%;
+        margin: auto;
         justify-content: space-evenly;
-        padding-top: 20vw;
-        padding-bottom: 20vw;
+        padding: 10vw;
+        // padding-top: 10vw;
+        // padding-bottom: 10vw;
     }
     @media screen and (min-width: 1200px) {
         grid-template-columns: 30% 30%;
@@ -340,15 +345,100 @@ nav {
 }
 
 #exams {
-    .exam-type {
-        img {
-            width: 30%;
-        }
+    margin: auto;
+    padding: 60px 30px;
+    h1 {
+        text-align: center;
+        font-size: 20pt;
+    }
+    font-size: 12pt;
 
+    @media screen and (min-width: 600px) {
+        padding: 60px 120px;
+    }
+    @media screen and (min-width: 850px) {
+        padding: 100px 0px;        
+        width: 90%;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 100px 0px;
+        width: 70%;
+    }
+
+
+    .exam-type {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        'title'
+        'pic'
+        'what'
+        'why';
+        padding: 50px 0;
+        border-bottom: 1px solid rgba($color: #000, $alpha: .5);
+        #exampic {
+            grid-area: pic;
+            width: 100%;
+        }
+        #examtitle {
+            grid-area: title;
+            font-size: 16pt;
+        }
+        #examwhat {
+            grid-area: what;
+        }
+        #examwhy {
+            grid-area: why;
+        }
+        #examwhat #examwhy {
+            p li {
+                font-size: 12pt;
+            }
+        }
+        @media screen and (min-width: 600px) {
+
+        }
+        @media screen and (min-width: 850px) {
+            grid-template-areas: 
+                'pic title title'
+                'pic what  why';
+            grid-template-columns: 30% 30% 35%;
+            grid-template-rows: 32px auto;
+            justify-content: space-between;
+            margin: auto;
+            padding: 80px 0;
+            grid-gap: 20px;
+            height: 320px;
+            #exampic {
+                object-fit: cover;
+                height: 100%;
+            }
+            #examtitle {
+                margin: 0;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            grid-template-columns: 28% 30% 30%;
+        }
+        @media screen and (min-width: 1200px) {
+            grid-template-columns: 280px 320px 320px;
+        }
     }
     
-    #exam-details {
-    
+    .exam-details {
+        padding: 120px 0px;
+        display: grid;
+        grid-template-columns: auto;
+        h2 {
+            font-size: 14pt;
+        }
+        @media screen and (min-width: 850px) {
+            padding: 180px 0px;
+            margin: auto;
+            grid-template-columns: 45% 45%;
+            justify-content: space-between;
+        }
     }
 }
 
