@@ -401,30 +401,82 @@ nav {
     margin: 0;
     padding: 30px;
     background-color: #9fd4d6;
-    p ul {
-        font-size: 14pt;
+    article {
+        p, li{
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: Montserrat-Light;
+        }
     }
     @media screen and (min-width: 600px) {
         padding: 60px;
+        article {
+            h1 {
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+        }
     }
     @media screen and (min-width: 800px) {
-
+        padding: 80px;
+        article {
+            h1 {
+                padding-top: 36px;
+                padding-bottom: 36px;
+            }
+        }
     }
-    @media screen and (min-width: 992px) {
-        //grid-template-columns: 45% 45%;
-        margin: auto;
-        justify-content: space-evenly;
-        padding: 10vw;
+    @media screen and (min-width: 1024px) {
+        padding: 140px;
+
+        // grid-template-columns: 48% 48%;
+        // margin: auto;
+        // justify-content: space-evenly;
+        // padding: 5vw;
         // padding-top: 10vw;
         // padding-bottom: 10vw;
     }
     @media screen and (min-width: 1200px) {
-        grid-template-columns: 30% 30%;
+        grid-template-columns: 42% 42%;
 
-        padding-top: 20vw;
-        padding-bottom: 20vw;
+        margin: auto;
+        padding: 100px;
+        justify-content: center;
+
+        grid-gap: 90px;
+
+
+
+        article {
+            p, li{
+                font-size: 18px;
+            }
+            h1 {
+                height: 80px;
+
+                padding: 0;
+                margin: 0;
+                font-size: 24px;
+            }
+        }
     }
+    @media screen and (min-width: 1600px) {
+        grid-template-columns: 40% 40%;
+        grid-gap: 360px;
+        padding: 220px;
+        article {
+            p, li{
+                font-size: 20px;
+            }
+            h1 {
+                height: 100px;
 
+                padding: 0;
+                margin: 0;
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 #exams {
@@ -474,9 +526,16 @@ nav {
         #examwhy {
             grid-area: why;
         }
-        #examwhat #examwhy {
-            p li {
+        #examwhat, #examwhy {
+            p {
+                margin:2px 0;
                 font-size: 12pt;
+                font-family: Montserrat-Light;
+            }
+        }
+        #list {
+            p {
+                margin:2px 0;
             }
         }
         @media screen and (min-width: 600px) {
