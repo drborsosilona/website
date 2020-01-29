@@ -570,7 +570,7 @@ nav .topnav {
 
 .exam-details {
   margin: auto;
-  padding: 120px 0;
+  padding: 80px 0;
   display: grid;
   grid-template-columns: auto;
   width: 75%;
@@ -579,6 +579,7 @@ nav .topnav {
   font-size: 14pt;
 }
 .exam-details p {
+  font-size: 12pt;
   font-family: Montserrat-Light;
 }
 @media screen and (min-width: 950px) {
@@ -592,14 +593,14 @@ nav .topnav {
   .exam-details h2 {
     font-size: 16pt;
   }
-  .exam-details p {
-    font-size: 14pt;
-  }
 }
 @media screen and (min-width: 1200px) {
   .exam-details {
     width: 950px;
     padding: 180px 0;
+  }
+  .exam-details p {
+    font-size: 14pt;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -608,6 +609,72 @@ nav .topnav {
     width: 1150px;
     grid-gap: 180px;
   }
+}
+
+#contact {
+  display: grid;
+  grid-template-areas: "img" "info";
+}
+#contact img {
+  grid-area: img;
+  visibility: hidden;
+  height: 0;
+}
+#contact article {
+  grid-area: info;
+  margin: auto;
+  width: 75%;
+  padding-bottom: 40px;
+}
+#contact article p {
+  font-family: Montserrat-Light;
+}
+#contact article h2 {
+  padding-top: 18px;
+  font-size: 18px;
+}
+#contact article #ctable {
+  display: grid;
+  width: 320px;
+  grid-template-columns: 20% auto;
+}
+@media screen and (min-width: 950px) {
+  #contact {
+    grid-template-areas: "img info";
+    grid-template-columns: 50% auto;
+  }
+  #contact img {
+    object-fit: cover;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+  }
+  #contact article {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #contact article {
+    padding: 100px 0;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #contact article {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    width: 550px;
+  }
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  padding: 25px 0;
+  color: white;
+  background-color: #484848;
+  text-align: center;
+  font-family: Montserrat-Light;
 }
 
 /*# sourceMappingURL=master.css.map */
