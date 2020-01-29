@@ -446,6 +446,7 @@ nav .topnav {
 #exams {
   margin: auto;
   padding: 80px 0;
+  padding-bottom: 0;
   width: 75%;
   font-size: 12pt;
 }
@@ -464,6 +465,7 @@ nav .topnav {
   #exams {
     padding: 120px 0px;
     width: 90%;
+    padding-bottom: 0;
   }
   #exams h1 {
     padding-bottom: 40px;
@@ -473,6 +475,7 @@ nav .topnav {
   #exams {
     padding: 200px 0px;
     width: 950px;
+    padding-bottom: 0;
   }
   #exams h1 {
     padding-bottom: 80px;
@@ -572,12 +575,27 @@ nav .topnav {
 #exams .exam-details h2 {
   font-size: 14pt;
 }
-@media screen and (min-width: 850px) {
+#exams .exam-details p {
+  font-family: Montserrat-Light;
+}
+@media screen and (min-width: 950px) {
   #exams .exam-details {
     padding: 180px 0px;
     margin: auto;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 52% 37%;
     justify-content: space-between;
+  }
+  #exams .exam-details h2 {
+    font-size: 16pt;
+  }
+  #exams .exam-details p {
+    font-size: 14pt;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #exams .exam-details {
+    grid-template-columns: 610px 390px;
+    grid-gap: 180px;
   }
 }
 

@@ -501,6 +501,8 @@ nav {
 #exams {
     margin: auto;
     padding: 80px 0;
+    padding-bottom: 0;
+
     width: 75%;
     h1 {
         text-align: center;
@@ -516,6 +518,8 @@ nav {
     @media screen and (min-width: 950px) {
         padding: 120px 0px;        
         width: 90%;
+        padding-bottom: 0;
+
         h1 {
             padding-bottom: 40px;
         }
@@ -523,6 +527,8 @@ nav {
     @media screen and (min-width: 1200px) {
         padding: 200px 0px;
         width: 950px;
+        padding-bottom: 0;
+
         h1 {
             padding-bottom: 80px;
         }
@@ -637,11 +643,24 @@ nav {
         h2 {
             font-size: 14pt;
         }
-        @media screen and (min-width: 850px) {
+        p {
+            font-family: Montserrat-Light;
+        }
+        @media screen and (min-width: 950px) {
             padding: 180px 0px;
             margin: auto;
-            grid-template-columns: 45% 45%;
+            grid-template-columns: 52% 37%;
             justify-content: space-between;
+            h2 {
+                font-size: 16pt;
+            }
+            p {
+                font-size: 14pt;
+            }
+        }
+        @media screen and (min-width: 1400px) {
+            grid-template-columns: 610px 390px;
+            grid-gap: 180px;
         }
     }
 }
