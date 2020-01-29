@@ -257,7 +257,7 @@ nav .topnav {
     height: 600px;
   }
   #intro article #signature {
-    padding-top: 40px;
+    padding-top: 60px;
     width: 420px;
   }
   #intro article p {
@@ -445,87 +445,123 @@ nav .topnav {
 
 #exams {
   margin: auto;
-  padding: 60px 30px;
+  padding: 80px 0;
+  width: 75%;
   font-size: 12pt;
 }
 #exams h1 {
   text-align: center;
   font-size: 20pt;
+  margin: 0;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 600px) {
   #exams {
-    padding: 60px 120px;
+    width: 50%;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
   #exams {
-    padding: 100px 0px;
+    padding: 120px 0px;
     width: 90%;
+  }
+  #exams h1 {
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   #exams {
-    padding: 100px 0px;
-    width: 70%;
+    padding: 200px 0px;
+    width: 950px;
+  }
+  #exams h1 {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #exams {
+    width: 1150px;
   }
 }
 #exams .exam-type {
-  width: 100%;
   height: auto;
   display: grid;
   grid-template-areas: "title" "pic" "what" "why";
-  padding: 50px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+  padding-top: 0;
+  border-bottom: 1px solid #32848a;
 }
 #exams .exam-type #exampic {
   grid-area: pic;
   width: 100%;
+  padding-bottom: 10px;
 }
 #exams .exam-type #examtitle {
   grid-area: title;
   font-size: 16pt;
+  margin: 30px 0;
 }
 #exams .exam-type #examwhat {
   grid-area: what;
+  padding: 8px 0;
 }
 #exams .exam-type #examwhy {
   grid-area: why;
 }
+#exams .exam-type #examwhat #q, #exams .exam-type #examwhy #q {
+  padding: 8px 0;
+}
 #exams .exam-type #examwhat p, #exams .exam-type #examwhy p {
-  margin: 2px 0;
+  margin: 3px 0;
   font-size: 12pt;
   font-family: Montserrat-Light;
 }
 #exams .exam-type #list p {
   margin: 2px 0;
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
   #exams .exam-type {
     grid-template-areas: "pic title title" "pic what  why";
-    grid-template-columns: 30% 30% 35%;
-    grid-template-rows: 32px auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 40px 190px;
     justify-content: space-between;
     margin: auto;
-    padding: 80px 0;
-    grid-gap: 20px;
-    height: 320px;
+    padding: 55px 0;
+    grid-gap: 0px;
+    height: 230px;
   }
   #exams .exam-type #exampic {
-    object-fit: cover;
+    object-fit: unset;
     height: 100%;
+    width: auto;
+    padding: 0;
   }
   #exams .exam-type #examtitle {
     margin: 0;
+    padding: 0;
   }
-}
-@media screen and (min-width: 992px) {
-  #exams .exam-type {
-    grid-template-columns: 28% 30% 30%;
+  #exams .exam-type #examwhat {
+    padding: 0;
+  }
+  #exams .exam-type #examwhat #q, #exams .exam-type #examwhy #q {
+    padding: 0;
+  }
+  #exams .exam-type #examwhat p, #exams .exam-type #examwhy p {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
   #exams .exam-type {
     grid-template-columns: 280px 320px 320px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #exams .exam-type {
+    grid-template-rows: 40px 210px;
+    height: 250px;
+  }
+  #exams .exam-type #examwhat p, #exams .exam-type #examwhy p {
+    font-size: 14px;
   }
 }
 #exams .exam-details {
