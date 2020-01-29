@@ -130,12 +130,21 @@ nav {
         padding-top: 80px;
 
         a {
-            padding: 16px 16px 16px 48px;
+            padding: 16px;
             text-decoration: none;
             font-size: 25px;
+            text-align: center;
             color: #083c4d;
             display: block;
             transition: 0.3s;
+
+        }
+        @media screen and (min-width: 600px) {
+            padding-top:120px;
+            a {
+                font-size: 32px;
+                padding: 32px;
+            }
         }
 
         a:hover {
@@ -207,7 +216,7 @@ nav {
             }
         }
     }
-    @media screen and (min-width: 1380px) {
+    @media screen and (min-width: 1600px) {
         height: 185px;
 
         .topnav {
@@ -234,7 +243,7 @@ nav {
         grid-area: article;
         padding-bottom: 24px;
         #signature {
-            width: 90%;
+            width: 80%;
 
             display: block;
             position: relative;
@@ -255,12 +264,12 @@ nav {
             line-height: default;
             text-align: center;
             padding: 0;
-            font-size: 20pt;
+            font-size: 16pt;
 
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
         #service {
-            padding-top: 40px;
+            padding-top: 65px;
         }
         #desc {
             padding-top: 40px;
@@ -275,10 +284,17 @@ nav {
         }
         article {
             #signature {
+                padding-top: 40px;
                 width: 420px;
             }
             p {
                 padding: 60px;
+            }
+            #job {
+                font-size: 20pt;
+            }
+            #service {
+                padding-top: 100px;
             }
             #desc {
                 padding-top: 0;
@@ -294,12 +310,12 @@ nav {
        article {
            #signature {
                width: 320px;
-               padding-top: 14vw;
+               padding-top: 17vw;
 
-               transform: translateX(-20px) rotate(-5deg);
+               transform: translateX(-50px) rotate(-5deg);
            }
            p {
-               width: 300px;
+               width: 320px;
                margin-left: auto;
                margin-right: auto;
                padding: 0;
@@ -340,21 +356,20 @@ nav {
         }
         article {
             #signature {
-                width: 50%;
+                width: 380px;
                 padding-top: 16vw;
 
-                transform: translateX(-85px) rotate(-5deg);
+                transform: translateX(-80px) rotate(-5deg);
             }
             p {
+                font-size: 18px;
                 padding: 0;
-                font-size: 21px;
-                width: 390px;
+                width: 360px;
             }
             #service {
-                padding-bottom: 52px;
+                padding-bottom: 65px;
             }
             #job {
-                font-size: 32px;
                 transform: translateY(-10px);
             }
             #desc {
@@ -374,10 +389,14 @@ nav {
                 padding-top: 280px;
             }
             p {
+                font-size: 21px;
                 width: 390px;
             }
             #service {
                 padding-bottom: 85px;
+            }
+            #job {
+                font-size: 32px;
             }
             #desc {
                 padding-bottom: 20px;
@@ -403,7 +422,7 @@ nav {
     background-color: #9fd4d6;
     article {
         p, li{
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.6;
             font-family: Montserrat-Light;
         }
