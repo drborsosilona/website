@@ -372,6 +372,203 @@ nav .topnav {
   }
 }
 
+#aboutme {
+  display: grid;
+  grid-template-areas: "img" "article";
+}
+#aboutme p {
+  font-family: Montserrat-Light;
+}
+#aboutme #portrait {
+  grid-area: img;
+  width: 100%;
+}
+#aboutme article {
+  grid-area: article;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+#aboutme article h1 {
+  font-size: 18px;
+}
+#aboutme article p {
+  line-height: 1.5;
+}
+#aboutme article div {
+  padding-left: 20px;
+}
+#aboutme article div p {
+  line-height: unset;
+  margin: 0;
+  margin: 4px 0;
+}
+@media screen and (min-width: 600px) {
+  #aboutme {
+    grid-template-rows: 800px;
+  }
+  #aboutme #portrait {
+    object-fit: cover;
+    height: 800px;
+  }
+  #aboutme article {
+    width: 500px;
+    padding: 60px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  #aboutme {
+    grid-template-areas: "img article";
+    grid-template-columns: 45% auto;
+  }
+  #aboutme #portrait {
+    height: 100%;
+  }
+  #aboutme article {
+    width: 80%;
+    padding: 0;
+    padding-top: 60px;
+  }
+  #aboutme article p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #aboutme article {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #aboutme {
+    grid-template-columns: 55% auto;
+    grid-template-rows: auto;
+  }
+  #aboutme #portrait {
+    object-fit: unset;
+    height: auto;
+    width: 100%;
+  }
+  #aboutme article {
+    padding: unset;
+    padding-top: 100px;
+  }
+  #aboutme article p {
+    font-size: 16px;
+  }
+  #aboutme article div {
+    padding-left: 45px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #aboutme {
+    grid-template-columns: 50% auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #aboutme article {
+    width: 500px;
+    padding-top: 120px;
+  }
+  #aboutme article h1 {
+    font-size: 18px;
+  }
+  #aboutme article p {
+    font-size: 18px;
+  }
+  #aboutme article div {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #aboutme article {
+    width: 550px;
+  }
+  #aboutme article h1 {
+    font-size: 20px;
+  }
+  #aboutme article p {
+    font-size: 20px;
+  }
+}
+
+#quote {
+  display: grid;
+  grid-template-areas: "picture" "quote";
+}
+#quote img {
+  grid-area: picture;
+  width: 100%;
+}
+#quote p {
+  margin: 0;
+  font-family: Montserrat-Light;
+  grid-area: quote;
+  color: #479499;
+  padding: 30px 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  #quote p {
+    padding: 40px 30px;
+  }
+}
+@media screen and (min-width: 450px) {
+  #quote p {
+    padding: 50px 0;
+    margin: auto;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #quote p {
+    padding: 80px 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  #quote p {
+    font-size: 18px;
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #quote {
+    grid-template-areas: "quote picture";
+    grid-template-columns: 45% auto;
+  }
+  #quote img {
+    object-fit: cover;
+    object-position: -100px 0;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #quote {
+    grid-template-columns: 55% auto;
+  }
+  #quote img {
+    object-position: -100px 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #quote {
+    grid-template-columns: 50% auto;
+  }
+  #quote img {
+    object-position: -100px 0;
+    height: 900px;
+  }
+  #quote p {
+    font-size: 20px;
+    width: 460px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #quote img {
+    height: 1100px;
+  }
+}
+
 #exam-info {
   position: relative;
   display: grid;

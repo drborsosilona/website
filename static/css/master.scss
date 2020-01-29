@@ -413,6 +413,198 @@ nav {
     }
 }
 
+#aboutme {
+    p {
+        font-family: Montserrat-Light;
+    }
+    display: grid;
+    grid-template-areas: 
+        'img'
+        'article';
+    #portrait {
+        grid-area: img;
+        width: 100%;
+    }
+    article {
+        grid-area: article;
+        padding: 20px;
+        padding-bottom: 60px;
+        h1 {
+            font-size: 18px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        div {
+            padding-left: 20px;
+            p {
+                line-height: unset;
+                margin: 0;
+                margin: 4px 0;
+            }
+        }
+    }
+    @media screen and (min-width: 600px) {
+        grid-template-rows: 800px;
+        #portrait {
+            object-fit: cover;
+            height: 800px;
+            //top: -100px;
+        }
+        article {
+            width: 500px;
+            padding: 60px;
+            margin: auto;
+        }
+    }
+    @media screen and (min-width: 800px) {
+       grid-template-areas: 'img article';
+       grid-template-columns: 45% auto;
+       #portrait {
+           height: 100%;
+       }
+       article {
+           width: 80%;
+           padding: 0;
+           padding-top: 60px;
+           p {
+               font-size: 15px;
+           }
+       }
+    }
+    @media screen and (min-width: 992px) {
+        article {
+            width: 440px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 55% auto;
+        grid-template-rows: auto;
+        #portrait {
+            object-fit: unset;
+            // width: 100%;
+            //height: 800px;
+            height: auto;
+            width: 100%;
+
+        }
+        article {
+            padding: unset;
+            padding-top: 100px;
+            p {
+                font-size: 16px;
+            }
+            div {
+                padding-left: 45px;
+            }
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 50% auto;
+    }
+    @media screen and (min-width: 1600px) {
+        article {
+            width: 500px;
+            padding-top: 120px;
+            h1 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 18px;
+            }
+            div {
+                padding-left: 60px;
+            }
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        article {
+            width: 550px;
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#quote {
+    display: grid;
+    grid-template-areas: 
+        'picture'
+        'quote';
+    img {
+        grid-area: picture;
+        width: 100%;
+    }
+    p {
+        margin: 0;
+        font-family: Montserrat-Light;
+
+        grid-area: quote;
+        color: #479499;
+        padding: 30px 20px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    @media screen and (min-width: 400px) {
+        p {
+            padding: 40px 30px;
+        }
+    }
+    @media screen and (min-width: 450px) {
+        p {
+            padding: 50px 0;
+            margin: auto;
+            width: 400px;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        p {
+            padding: 80px 0;
+        }
+    }
+    @media screen and (min-width: 800px) {
+        p {
+            font-size: 18px;
+            width: 420px;
+        }
+    }
+    @media screen and (min-width: 1100px) {
+        grid-template-areas: 'quote picture';
+        grid-template-columns: 45% auto;
+        img {
+            object-fit: cover;
+            object-position: -100px 0;
+            height: 800px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 55% auto;
+        img {
+            object-position: -100px 0;
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 50% auto;
+        img {
+            object-position: -100px 0;
+            height: 900px;
+        }
+        p {
+            font-size: 20px;
+            width: 460px;
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        img {
+            height: 1100px;
+        }
+    }
+}
+
 #exam-info{
     position: relative;
     display: grid;
