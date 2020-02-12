@@ -227,6 +227,18 @@ nav .topnav {
   margin-right: auto;
   padding-top: 32px;
   transform: rotate(-5deg);
+  animation-name: signature;
+  animation-duration: 2s;
+}
+@keyframes signature {
+  0% {
+    opacity: 0%;
+    transform: translateX(-20px) rotate(-5deg);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotate(-5deg);
+  }
 }
 #intro article p {
   margin: 0;
@@ -241,12 +253,52 @@ nav .topnav {
   padding: 0;
   font-size: 16pt;
   transform: translateY(-5px);
+  animation-name: job;
+  animation-duration: 2s;
+}
+@keyframes job {
+  0% {
+    opacity: 0%;
+    transform: translateX(20px) translateY(-5px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(-5px);
+  }
 }
 #intro article #service {
   padding-top: 65px;
+  animation-name: service;
+  animation-duration: 2.5s;
+}
+@keyframes service {
+  0% {
+    opacity: 0%;
+  }
+  33% {
+    opacity: 0%;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 #intro article #desc {
   padding-top: 40px;
+  animation-name: desc;
+  animation-duration: 3s;
+}
+@keyframes desc {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 @media screen and (min-width: 600px) {
   #intro {
@@ -286,6 +338,16 @@ nav .topnav {
     padding-top: 17vw;
     transform: translateX(-50px) rotate(-5deg);
   }
+  @keyframes signature {
+    0% {
+      opacity: 0%;
+      transform: translateX(-70px) rotate(-5deg);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateX(-50px) rotate(-5deg);
+    }
+  }
   #intro article p {
     width: 320px;
     margin-left: auto;
@@ -302,6 +364,16 @@ nav .topnav {
     font-size: 26px;
     transform: translateY(-10px);
   }
+  @keyframes job {
+    0% {
+      opacity: 0%;
+      transform: translateX(20px) translateY(-10px);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(-10px);
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   #intro {
@@ -315,6 +387,16 @@ nav .topnav {
     padding-top: 18vw;
     transform: translateX(-65px) rotate(-5deg);
   }
+  @keyframes signature {
+    0% {
+      opacity: 0%;
+      transform: translateX(-85px) rotate(-5deg);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateX(-65px) rotate(-5deg);
+    }
+  }
 }
 @media screen and (min-width: 1380px) {
   #intro #portrait {
@@ -326,6 +408,16 @@ nav .topnav {
     width: 380px;
     padding-top: 16vw;
     transform: translateX(-80px) rotate(-5deg);
+  }
+  @keyframes signature {
+    0% {
+      opacity: 0%;
+      transform: translateX(-90px) rotate(-5deg);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateX(-80px) rotate(-5deg);
+    }
   }
   #intro article p {
     font-size: 18px;
