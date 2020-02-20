@@ -216,18 +216,18 @@ nav {
             }
         }
     }
-    @media screen and (min-width: 1600px) {
-        height: 185px;
+    // @media screen and (min-width: 1600px) {
+    //     height: 185px;
 
-        .topnav {
-            padding-top: 80px;
+    //     .topnav {
+    //         padding-top: 80px;
 
-            font-size: 22px;
-            a {
-                padding: 0 18px 0 18px;
-            }
-        }
-    }
+    //         font-size: 22px;
+    //         a {
+    //             padding: 0 18px 0 18px;
+    //         }
+    //     }
+    // }
 }
 
 #intro {
@@ -499,7 +499,7 @@ nav {
     @media screen and (min-width: 1860px) {
         article {
             #signature {
-                padding-top: 410px;
+                padding-top: 340px;
             }
         }
         
@@ -598,7 +598,7 @@ nav {
     @media screen and (min-width: 1600px) {
         article {
             width: 500px;
-            padding-top: 120px;
+            padding-top: 80px;
             h1 {
                 font-size: 18px;
             }

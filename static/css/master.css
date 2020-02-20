@@ -193,18 +193,6 @@ nav .topnav {
     padding: 0 14px;
   }
 }
-@media screen and (min-width: 1600px) {
-  nav {
-    height: 185px;
-  }
-  nav .topnav {
-    padding-top: 80px;
-    font-size: 22px;
-  }
-  nav .topnav a {
-    padding: 0 18px 0 18px;
-  }
-}
 
 #intro {
   display: grid;
@@ -460,7 +448,7 @@ nav .topnav {
 }
 @media screen and (min-width: 1860px) {
   #intro article #signature {
-    padding-top: 410px;
+    padding-top: 340px;
   }
 }
 
@@ -559,7 +547,7 @@ nav .topnav {
 @media screen and (min-width: 1600px) {
   #aboutme article {
     width: 500px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
   #aboutme article h1 {
     font-size: 18px;
