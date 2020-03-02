@@ -187,7 +187,7 @@ nav .topnav {
   }
   nav .topnav {
     padding-top: 60px;
-    font-size: 20px;
+    font-size: 18px;
   }
   nav .topnav a {
     padding: 0 14px;
@@ -231,7 +231,7 @@ nav .topnav {
 #intro article p {
   margin: 0;
   padding: 20px;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 1.6;
 }
 #intro article #job {
@@ -341,7 +341,7 @@ nav .topnav {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    font-size: 12pt;
+    font-size: 11pt;
   }
   #intro article #service {
     padding-top: 22px;
@@ -408,9 +408,9 @@ nav .topnav {
     }
   }
   #intro article p {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
-    width: 360px;
+    width: 320px;
   }
   #intro article #service {
     padding-bottom: 65px;
@@ -433,7 +433,7 @@ nav .topnav {
     padding-top: 280px;
   }
   #intro article p {
-    font-size: 21px;
+    font-size: 18px;
     width: 390px;
   }
   #intro article #service {
@@ -657,8 +657,11 @@ nav .topnav {
   padding: 30px;
   background-color: #9fd4d6;
 }
+#exam-info #listy p {
+  margin: 0;
+}
 #exam-info article p, #exam-info article li {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   font-family: Montserrat-Light;
 }
@@ -687,20 +690,20 @@ nav .topnav {
 }
 @media screen and (min-width: 1200px) {
   #exam-info {
-    grid-template-columns: 42% 42%;
+    grid-template-columns: 37% 37%;
     margin: auto;
-    padding: 100px;
+    padding: 160px;
     justify-content: center;
-    grid-gap: 90px;
+    grid-gap: 180px;
   }
   #exam-info article p, #exam-info article li {
-    font-size: 18px;
+    font-size: 15px;
   }
   #exam-info article h1 {
     height: 80px;
     padding: 0;
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -710,13 +713,13 @@ nav .topnav {
     padding: 220px;
   }
   #exam-info article p, #exam-info article li {
-    font-size: 20px;
+    font-size: 17px;
   }
   #exam-info article h1 {
     height: 100px;
     padding: 0;
     margin: 0;
-    font-size: 32px;
+    font-size: 27px;
   }
 }
 
@@ -778,7 +781,7 @@ nav .topnav {
 }
 #exams .exam-type #examtitle {
   grid-area: title;
-  font-size: 16pt;
+  font-size: 13pt;
   margin: 30px 0;
 }
 #exams .exam-type #examwhat {
@@ -793,7 +796,7 @@ nav .topnav {
 }
 #exams .exam-type #examwhat p, #exams .exam-type #examwhy p {
   margin: 3px 0;
-  font-size: 12pt;
+  font-size: 11pt;
   font-family: Montserrat-Light;
 }
 #exams .exam-type #list p {
@@ -827,7 +830,7 @@ nav .topnav {
     padding: 0;
   }
   #exams .exam-type #examwhat p, #exams .exam-type #examwhy p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -841,7 +844,7 @@ nav .topnav {
     height: 250px;
   }
   #exams .exam-type #examwhat p, #exams .exam-type #examwhy p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -853,10 +856,10 @@ nav .topnav {
   width: 75%;
 }
 .exam-details h2 {
-  font-size: 14pt;
+  font-size: 13pt;
 }
 .exam-details p {
-  font-size: 12pt;
+  font-size: 11pt;
   font-family: Montserrat-Light;
 }
 @media screen and (min-width: 950px) {
@@ -868,7 +871,7 @@ nav .topnav {
     width: auto;
   }
   .exam-details h2 {
-    font-size: 16pt;
+    font-size: 13pt;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -877,7 +880,7 @@ nav .topnav {
     padding: 180px 0;
   }
   .exam-details p {
-    font-size: 14pt;
+    font-size: 11pt;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -903,12 +906,16 @@ nav .topnav {
   width: 75%;
   padding-bottom: 40px;
 }
+#contact article h1 {
+  font-size: 22px;
+}
 #contact article p {
   font-family: Montserrat-Light;
+  font-size: 10pt;
 }
 #contact article h2 {
   padding-top: 18px;
-  font-size: 18px;
+  font-size: 16px;
 }
 #contact article #ctable {
   display: grid;

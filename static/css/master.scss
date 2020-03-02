@@ -210,7 +210,7 @@ nav {
         height: 140px;
         .topnav {
             padding-top: 60px;
-            font-size: 20px;
+            font-size: 18px;
             a{
                 padding: 0 14px;
             }
@@ -268,7 +268,7 @@ nav {
         p {
             margin: 0;
             padding: 20px;
-            font-size: 14pt;
+            font-size: 12pt;
             line-height: 1.6;
         }
         #job {
@@ -382,7 +382,7 @@ nav {
                margin-left: auto;
                margin-right: auto;
                padding: 0;
-               font-size: 12pt;
+               font-size: 11pt;
            }
            #service {
                padding-top: 22px;
@@ -455,9 +455,9 @@ nav {
                 }
             }
             p {
-                font-size: 18px;
+                font-size: 16px;
                 padding: 0;
-                width: 360px;
+                width: 320px;
             }
             #service {
                 padding-bottom: 65px;
@@ -482,7 +482,7 @@ nav {
                 padding-top: 280px;
             }
             p {
-                font-size: 21px;
+                font-size: 18px;
                 width: 390px;
             }
             #service {
@@ -705,9 +705,15 @@ nav {
     margin: 0;
     padding: 30px;
     background-color: #9fd4d6;
+    #listy{
+        p{
+            margin: 0;
+
+        }
+    }
     article {
         p, li{
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.6;
             font-family: Montserrat-Light;
         }
@@ -741,26 +747,26 @@ nav {
         // padding-bottom: 10vw;
     }
     @media screen and (min-width: 1200px) {
-        grid-template-columns: 42% 42%;
+        grid-template-columns: 37% 37%;
 
         margin: auto;
-        padding: 100px;
+        padding: 160px;
         justify-content: center;
 
-        grid-gap: 90px;
+        grid-gap: 180px;
 
 
 
         article {
             p, li{
-                font-size: 18px;
+                font-size: 15px;
             }
             h1 {
                 height: 80px;
 
                 padding: 0;
                 margin: 0;
-                font-size: 24px;
+                font-size: 20px;
             }
         }
     }
@@ -770,14 +776,14 @@ nav {
         padding: 220px;
         article {
             p, li{
-                font-size: 20px;
+                font-size: 17px;
             }
             h1 {
                 height: 100px;
 
                 padding: 0;
                 margin: 0;
-                font-size: 32px;
+                font-size: 27px;
             }
         }
     }
@@ -841,7 +847,7 @@ nav {
         }
         #examtitle {
             grid-area: title;
-            font-size: 16pt;
+            font-size: 13pt;
             margin: 30px 0;
         }
         #examwhat {
@@ -857,7 +863,7 @@ nav {
             }
             p {
                 margin:3px 0;
-                font-size: 12pt;
+                font-size: 11pt;
                 font-family: Montserrat-Light;
             }
         }
@@ -900,7 +906,7 @@ nav {
                     padding: 0;
                 }
                 p {
-                    font-size: 12px;
+                    font-size: 11px;
                 }
             }
         }
@@ -915,7 +921,7 @@ nav {
             height: 250px;
             #examwhat, #examwhy {
                 p {
-                    font-size: 14px;
+                    font-size: 13px;
                 }
             }
         }
@@ -928,10 +934,10 @@ nav {
     grid-template-columns: auto;
     width: 75%;
     h2 {
-        font-size: 14pt;
+        font-size: 13pt;
     }
     p {
-        font-size: 12pt;
+        font-size: 11pt;
         font-family: Montserrat-Light;
     }
     @media screen and (min-width: 950px) {
@@ -941,14 +947,14 @@ nav {
         justify-content: space-between;
         width: auto;
         h2 {
-            font-size: 16pt;
+            font-size: 13pt;
         }
     }
     @media screen and (min-width: 1200px) {
         width: 950px;
         padding: 180px 0;
         p {
-            font-size: 14pt;
+            font-size: 11pt;
         }
     }
     @media screen and (min-width: 1400px) {
@@ -974,12 +980,16 @@ nav {
         margin: auto;
         width: 75%;
         padding-bottom: 40px;
+        h1{
+            font-size: 22px;
+        }
         p {
             font-family: Montserrat-Light;
+            font-size: 10pt;
         }
         h2 {
             padding-top: 18px;
-            font-size: 18px;
+            font-size: 16px;
         }
         #ctable {
             display: grid;
